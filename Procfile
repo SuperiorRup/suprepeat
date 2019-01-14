@@ -1,1 +1,1 @@
-worker: python superiorbot.py
+worker: python supbotrepeat.py
