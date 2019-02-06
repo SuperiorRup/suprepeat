@@ -11,7 +11,7 @@ async def say(ctx, *args):
     mesg = ' '.join(args)
     return await Mike.say(mesg)
 
-Mike.run('NTQyMzQ4NTgwNDkzNzIxNjEw.DzstyA.4COwIZnTxoxtC-Hjidr9dkGiUAM')
+Mike.run('NTQyNjQ5MjA0MTQxNDU3NDA5.DzxFYA.U6-42w6Yftv6COYALUuWLmye2SA')
 
 
 
