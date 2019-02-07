@@ -197,6 +197,6 @@ async def hack(ctx,user: discord.Member=None,*,hack=None):
         await client.say('**{}** has hacked himself ¯\_(ツ)_/¯.'.format(name.name))
         await client.send_message(name,'**Alert!**\n``You may have been hacked..``'.format(hack))
 
-client.run('NTQyNjQ5MjA0MTQxNDU3NDA5.Dz1cCQ._4DCD2erG2KY0-cdUQ6U8C1WhsI')
+        client.run(os.getenv('Token'))
 
 
