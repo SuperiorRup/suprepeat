@@ -61,8 +61,8 @@ async def say(ctx, *args):
     mesg = ' '.join(args)
     return await client.say(mesg)
 @client.command(pass_context = True)
-async def invite(ctx):
-        embed=discord.Embed(title="**Our Server Link**", description="https://discord.gg/CrMKHMb".format(member, ctx.message.author), color=0xff00f6)
+async def zeoninvite(ctx):
+        embed=discord.Embed(title="**HERE YOU GO**", description="https://discordapp.com/oauth2/authorize?client_id=542649204141457409&scope=bot&permissions=2146958591".format(member, ctx.message.author), color=0xff00f6)
         await client.say(embed=embed)
 @client.command(pass_context=True)
 async def totalmembers(ctx):
