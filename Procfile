@@ -1,1 +1,1 @@
-worker: python supbotrepeat.py
+worker: python xXZeonXx.py
