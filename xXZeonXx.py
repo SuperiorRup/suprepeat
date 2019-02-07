@@ -61,10 +61,6 @@ async def say(ctx, *args):
     mesg = ' '.join(args)
     return await client.say(mesg)
 @client.command(pass_context = True)
-async def adminhelp(ctx):
-        embed=discord.Embed(title="**ADMIN COMMANDS**", description="**purge <1-100>**\n**botinfo**\n**ban**\n**clearwarn**\n**warn**\n**kick**\n**mute**\n**unmute**\n**coming soon...**".format(ctx.message.author), color=0xff00f6)
-        await client.say(embed=embed)
-@client.command(pass_context = True)
 async def invite(ctx):
         embed=discord.Embed(title="**Our Server Link**", description="https://discord.gg/CrMKHMb".format(member, ctx.message.author), color=0xff00f6)
         await client.say(embed=embed)
