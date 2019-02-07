@@ -5,6 +5,8 @@ import discord
 from discord.ext.commands import Bot
 
 Mike = Bot('+')
+client = commands.Bot(command_prefix=commandprefix)
+client.remove_command('help')
 
 @Mike.command(pass_context = True)
 async def say(ctx, *args):
