@@ -164,6 +164,46 @@ async def unban(ctx, userName: discord.User):
     else:
         embed=discord.Embed(title="Command not accepted!", description="Sorry! You don't have permission to use this command.", color=0xff00f6)
         await client.say(embed=embed)
+        @client.command(pass_context=True)
+async def hack(ctx,user: discord.Member=None,*,hack=None):
+    nome = ctx.message.author
+    if not hack:
+        hack = 'discord'
+    else:
+        hack = hack.replace(' ','_')
+    channel = ctx.message.channel
+    x = await client.send_message(channel, '``[▓▓▓                    ] / {}-Starting Hacking Tool.``'.format(hack))
+    await asyncio.sleep(1.5)
+    x = await client.edit_message(x,'``[▓▓▓▓▓▓▓                ] - {}-Starting Hacking Tool..``'.format(hack))
+    await asyncio.sleep(0.3)
+    x = await client.edit_message(x,'``[▓▓▓▓▓▓▓▓▓▓▓▓           ] \ {}-Hacking Tool Started...``'.format(hack))
+    await asyncio.sleep(1.2)
+    x = await client.edit_message(x,'``[▓▓▓▓▓▓▓▓▓▓▓▓▓▓         ] | {}-Starting to hack.``'.format(hack))
+    await asyncio.sleep(1)
+    x = await client.edit_message(x,'``[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓      ] / {}-Searching fb password..``'.format(hack))
+    await asyncio.sleep(1.5)
+    x = await client.edit_message(x,'``[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓   ] - {}-Searching discord password.``'.format(hack))
+    await asyncio.sleep(1)
+    x = await client.edit_message(x,'``[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ] \ {}-Almost Done...``'.format(hack))
+    await asyncio.sleep(1)
+    x = await client.edit_message(x,'``Showing Results {}- Discord Hacker``'.format(hack))
+    await asyncio.sleep(2)
+    x = await client.edit_message(x,'``Downloading File  |``')
+    await asyncio.sleep(0.5)
+    x = await client.edit_message(x,'``Downloading File..  /``')
+    await asyncio.sleep(0.5)
+    x = await client.edit_message(x,'``Downloading File... -``')
+    await asyncio.sleep(0.5)
+    x = await client.edit_message(x,'``Downloading File....\``')
+    await client.delete_message(x)
+    await client.delete_message(ctx.message)
+        
+    if user:
+        await client.say('`I Found This:-\n FB password-887755hug \n Discord password- 9785661adhs \n '.format(hack,user.name))
+        await client.send_message(user,'**Alert!**\n``You may have been hacked.``'.format(hack))
+    else:
+        await client.say('**{}** has hacked himself ¯\_(ツ)_/¯.'.format(name.name))
+        await client.send_message(name,'**Alert!**\n``You may have been hacked..``'.format(hack))
 
 client.run('NTQyNjQ5MjA0MTQxNDU3NDA5.Dz1cCQ._4DCD2erG2KY0-cdUQ6U8C1WhsI')
 
