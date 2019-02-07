@@ -75,10 +75,6 @@ async def zeonyt(ctx):
 @client.command(pass_context = True)
 async def zeonlink(ctx):
         embed=discord.Embed(title="**HERE IS THE LINK OF ZEON**", description="https://discordapp.com/oauth2/authorize?client_id=542649204141457409&scope=bot&permissions=2146958591".format(ctx.message.author), color=0xff00f6)
-        await client.say(embed=embed) 
-@client.command(pass_context = True)
-async def Help(ctx):
-        embed=discord.Embed(title="**New**", description="**join**\n**zeonlink**\n**adminhelp**\n**say**\n**botinfo**\n**ping**\n**invite**\n**join\n**zeonyt**\n** - coming soon...**\n****".format(ctx.message.author), color=0xff00f6)
         await client.say(embed=embed)
 @client.command(pass_context = True)
 async def botinfo(ctx):
